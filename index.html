@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kaeru</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Sans:wght@400;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Roboto mono", "PT Sans", "IBM Plex Sans JP", sans-serif;
+        background-color: #111;
+        color: #fff;
+        line-height: 1.5;
+        font-size: 16px;
+      }
+      a {
+        color: inherit;
+      }
+      .main {
+        padding: 40px 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .userabout > h1 {
+        font-size: 40px;
+      }
+      .section > h2 {
+        padding-bottom: 10px;
+      }
+      .contacts {
+        display: inline-grid;
+        grid-template-columns: 24px auto;
+        line-height: 1;
+        vertical-align: middle;
+        gap: 10px 5px;
+      }
+      .contacts-item {
+        display: contents;
+      }
+      .contacts-item__logo {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        color: #888;
+      }
+      .contacts-item__logo svg {
+        width: 100%;
+        height: 100%;
+      }
+      .contacts-item__value {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="section userabout">
+        <h1>kaeru</h1>
+        <p>この瞬間が訪れたことはきっと奇跡だ</p>
+      </div>
+      <div class="section">
+        <div class="contacts">
+          <div class="contacts-item">
+            <div class="contacts-item__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="contacts-item__value">
+              <a href="https://github.com/kaeru-shigure">kaeru-shigure</a>
+            </div>
+          </div>
+          <div class="contacts-item">
+            <div class="contacts-item__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M20.285,5.689c-0.387-0.593-0.937-1.047-1.591-1.314c-1.127-0.461-2.107-0.771-2.991-0.947	c-0.81-0.162-1.624,0.165-2.11,0.805c-0.492-0.036-1.009-0.045-1.564-0.031c-0.593-0.014-1.124-0.003-1.623,0.031	C9.914,3.591,9.1,3.263,8.3,3.428C7.412,3.604,6.432,3.914,5.303,4.375C4.649,4.643,4.099,5.1,3.714,5.693	c-2.18,3.35-3.033,6.96-2.61,11.037c0.039,0.378,0.248,0.717,0.567,0.922c1.625,1.046,3.104,1.796,4.513,2.29	c0.932,0.333,1.962-0.025,2.505-0.873l0.398-0.622c0.04,0.009,0.083,0.013,0.123,0.022c-0.699-0.174-1.38-0.401-2.021-0.703	l0.426-0.904c2.67,1.256,6.077,1.256,8.75,0l0.426,0.904c-0.632,0.297-1.303,0.521-1.992,0.695c0.029-0.007,0.059-0.009,0.088-0.016	l0.43,0.651c0.408,0.618,1.086,0.971,1.788,0.971c0.232,0,0.466-0.039,0.694-0.118c1.416-0.497,2.896-1.248,4.528-2.296	c0.32-0.205,0.529-0.545,0.568-0.923C23.319,12.653,22.465,9.043,20.285,5.689z M8.75,14C7.789,14,7,13.096,7,12s0.789-2,1.75-2	s1.75,0.904,1.75,2S9.711,14,8.75,14z M15.25,14c-0.961,0-1.75-0.904-1.75-2s0.789-2,1.75-2S17,10.904,17,12S16.211,14,15.25,14z"
+                />
+              </svg>
+            </div>
+            <div class="contacts-item__value">kaeru_dev</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
