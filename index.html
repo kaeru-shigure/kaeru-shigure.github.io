@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kaeru</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/117450305" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Sans:wght@400;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Roboto mono", "PT Sans", "IBM Plex Sans JP", sans-serif;
+        background-color: #111;
+        color: #fff;
+        line-height: 1.5;
+        font-size: 16px;
+      }
+      a {
+        color: inherit;
+        transition: opacity 0.2s ease;
+      }
+      html.a a {
+        opacity: 0.3;
+      }
+      html.a a.a {
+        opacity: 1;
+      }
+      a span {
+        position: relative;
+        color: transparent;
+      }
+      a span:before {
+        pointer-events: none;
+        display: block;
+        content: attr(data-c);
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        color: #fff;
+        user-select: none;
+      }
+      a span.u:before {
+        bottom: 3px;
+      }
+      .main {
+        padding: 40px 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .userabout > h1 {
+        font-size: 40px;
+      }
+      .section > h2 {
+        padding-bottom: 10px;
+      }
+      .contacts {
+        display: inline-grid;
+        grid-template-columns: 24px auto;
+        line-height: 1;
+        vertical-align: middle;
+        gap: 10px 5px;
+      }
+      .contacts-item {
+        display: contents;
+      }
+      .contacts-item__logo {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        color: #888;
+      }
+      .contacts-item__logo svg {
+        width: 100%;
+        height: 100%;
+      }
+      .contacts-item__value {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="section userabout">
+        <h1>kaeru</h1>
+        <p>この瞬間が訪れたことはきっと奇跡だ</p>
+      </div>
+      <div class="section">
+        <div class="contacts">
+          <div class="contacts-item">
+            <div class="contacts-item__logo">
+              <svg
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 500 463"
+              >
+                <defs>
+                  <clipPath id="hole">
+                    <path
+                      d="M 0 0 H 500 V 463 H 0 ZM0,300 H272 L183 450 H0 ZM220,290 H485 V450 H315 Z"
+                      clip-rule="evenodd"
+                    />
+                  </clipPath>
+                </defs>
+                <g fill="currentColor">
+                  <path
+                    d="M91 255c-9 0-16 3-21 10-4 4-7 10-7 19l-11-1c-8 0-15 3-20 9a30 30 0 0 0-5 36c-4 4-7 9-9 15-1 5-3 14 4 25l-1 2c-4 7-4 16-1 24 6 12 19 22 45 32l31 10c22 6 41 9 58 9 31 0 53-10 65-28 21-30 18-57-9-83-14-15-24-36-26-41-4-14-15-29-33-29a29 29 0 0 0-24 12c-5-6-10-11-15-14-7-5-14-7-21-7Zm0 21 10 3c11 7 32 44 40 59 3 5 8 7 12 7 8 0 14-8 0-19-20-15-13-40-3-41l1-1c9 0 13 16 13 16s12 29 31 48c20 20 21 36 7 57-10 14-29 16-48 16-20 0-41-3-53-6 0 0-70-19-61-36 1-2 4-3 7-3 12 0 35 18 45 18 2 0 4-2 4-4 5-15-63-20-58-42 1-4 4-5 8-5 16 0 54 29 61 29l2-1c4-6 2-11-26-28-27-16-47-25-36-37 1-2 3-2 5-2 17 0 56 35 56 35s11 11 18 11c1 0 2 0 3-2 5-7-42-43-45-57-2-10 1-15 7-15Z"
+                  />
+                  <path
+                    d="M408 255c9 0 16 3 22 10 3 4 6 10 7 19l10-1c8 0 15 3 20 9a30 30 0 0 1 5 36c4 4 7 9 9 15 1 5 3 14-4 25l1 2c4 7 4 16 1 24-6 12-19 22-45 32l-31 10c-22 6-41 9-58 9-30 0-52-10-65-28-21-30-18-57 9-83 14-15 24-36 26-41 4-14 15-29 33-29a29 29 0 0 1 24 12l15-14c7-5 14-7 21-7Zm0 21-9 3c-12 7-33 44-41 59-3 5-7 7-12 7-8 0-14-8 0-19 20-15 13-40 3-41l-1-1c-9 0-13 16-13 16s-11 29-31 48c-20 20-21 36-7 57 10 14 29 16 48 16 20 0 41-3 53-6 0 0 70-19 62-36-2-2-4-3-8-3-12 0-35 18-45 18-2 0-3-2-4-4-4-15 63-20 58-42-1-4-4-5-8-5-16 0-54 29-61 29l-2-1c-3-6-2-11 26-28 27-16 47-25 36-37-1-2-3-2-5-2-17 0-56 35-56 35s-11 11-17 11c-2 0-3 0-4-2-5-7 42-43 45-57 2-10-1-15-7-15Z"
+                  />
+                  <path
+                    d="M319 229c0-24-30 12-68 12s-69-36-69-12c0 16 8 41 28 57 4-14 26-25 29-24 4 3 4 9 12 14 7-5 7-11 11-14 4-1 26 10 30 24 20-16 27-41 27-57Z"
+                  />
+                  <path
+                    d="M373 196a17 17 0 1 0 0-34 17 17 0 0 0 0 34Zm-245 0a17 17 0 1 0 0-34 17 17 0 0 0 0 34Z"
+                  />
+                  <path
+                    d="M313 172c7 2 9 16 16 12a26 26 0 1 0-25-46c-12 6-17 22-10 35 3 6 13-4 19-1Zm-124 0c-7 2-10 16-17 12a26 26 0 1 1 25-46c13 6 18 22 11 35-3 6-13-4-19-1Z"
+                  />
+                  <path
+                    d="M434 222c0-101-82-183-184-183S66 121 66 222s82 182 184 182 184-81 184-182Zm-389 0c0-113 92-204 205-204a204 204 0 1 1 0 408c-113 0-205-92-205-204Z"
+                    clip-path="url(#hole)"
+                  />
+                </g>
+                <path
+                  d="M262 262c-4 3-4 9-11 14-8-5-8-11-12-14-3-1-25 10-29 24 10 7 23 13 41 13 17 0 30-6 41-13-4-14-26-25-30-24Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div class="contacts-item__value">
+              <a href="https://huggingface.co/kaeru-shigure">kaeru-shigure</a>
+            </div>
+          </div>
+          <div class="contacts-item">
+            <div class="contacts-item__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="contacts-item__value">
+              <a href="https://github.com/kaeru-shigure">kaeru-shigure</a>
+            </div>
+          </div>
+          <div class="contacts-item">
+            <div class="contacts-item__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                role="img"
+                aria-labelledby="asg6uhdw8fo0ftuegpnci1ihwe9f5s9c"
+                class="octicon"
+              >
+                <title id="asg6uhdw8fo0ftuegpnci1ihwe9f5s9c">X</title>
+                <path
+                  fill="currentColor"
+                  d="M9.332 6.925 14.544 1h-1.235L8.783 6.145 5.17 1H1l5.466 7.78L1 14.993h1.235l4.78-5.433 3.816 5.433H15L9.332 6.925ZM7.64 8.848l-.554-.775L2.68 1.91h1.897l3.556 4.975.554.775 4.622 6.466h-1.897L7.64 8.848Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="contacts-item__value">
+              <a href="https://twitter.com/kaeru_shigure">kaeru_shigure</a>
+            </div>
+          </div>
+          <div class="contacts-item">
+            <div class="contacts-item__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M20.285,5.689c-0.387-0.593-0.937-1.047-1.591-1.314c-1.127-0.461-2.107-0.771-2.991-0.947	c-0.81-0.162-1.624,0.165-2.11,0.805c-0.492-0.036-1.009-0.045-1.564-0.031c-0.593-0.014-1.124-0.003-1.623,0.031	C9.914,3.591,9.1,3.263,8.3,3.428C7.412,3.604,6.432,3.914,5.303,4.375C4.649,4.643,4.099,5.1,3.714,5.693	c-2.18,3.35-3.033,6.96-2.61,11.037c0.039,0.378,0.248,0.717,0.567,0.922c1.625,1.046,3.104,1.796,4.513,2.29	c0.932,0.333,1.962-0.025,2.505-0.873l0.398-0.622c0.04,0.009,0.083,0.013,0.123,0.022c-0.699-0.174-1.38-0.401-2.021-0.703	l0.426-0.904c2.67,1.256,6.077,1.256,8.75,0l0.426,0.904c-0.632,0.297-1.303,0.521-1.992,0.695c0.029-0.007,0.059-0.009,0.088-0.016	l0.43,0.651c0.408,0.618,1.086,0.971,1.788,0.971c0.232,0,0.466-0.039,0.694-0.118c1.416-0.497,2.896-1.248,4.528-2.296	c0.32-0.205,0.529-0.545,0.568-0.923C23.319,12.653,22.465,9.043,20.285,5.689z M8.75,14C7.789,14,7,13.096,7,12s0.789-2,1.75-2	s1.75,0.904,1.75,2S9.711,14,8.75,14z M15.25,14c-0.961,0-1.75-0.904-1.75-2s0.789-2,1.75-2S17,10.904,17,12S16.211,14,15.25,14z"
+                />
+              </svg>
+            </div>
+            <div class="contacts-item__value">kaeru_dev</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let ga = 0;
+      [...document.querySelectorAll("a")].forEach((a) => {
+        let t = a.textContent,
+          l = t.length,
+          s = [];
+        a.textContent = "";
+        t = [
+          { style: {} },
+          ...[...t].map((c) => {
+            const s = a.appendChild(document.createElement("span"));
+            s.textContent = c;
+            s.dataset.c = c;
+            return s;
+          }),
+        ];
+        a.onmouseover = () => {
+          ga++;
+          document.documentElement.classList.add("a");
+          a.classList.add("a");
+          if (s.some((q) => q.p < 10)) return;
+          let q = { p: 0 },
+            b = 0,
+            u = (f) => t[q.p].classList?.[f ? "add" : "remove"]("u"),
+            f = () => {
+              if (q.p >= l && b >= 7) return u();
+              requestAnimationFrame(f);
+              b++;
+              if (b > 7) {
+                b = 0;
+                u();
+                q.p += 1;
+                u(1);
+              }
+            };
+          f(s.push(q));
+        };
+        a.onmouseout = () => {
+          a.classList.remove("a");
+          ga--;
+          if (ga === 0) document.documentElement.classList.remove("a");
+        };
+      });
+    </script>
+  </body>
+</html>
